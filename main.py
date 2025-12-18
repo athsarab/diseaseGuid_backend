@@ -42,7 +42,7 @@ disease_labels = load_labels(d_labels_path)
 severity_labels = load_labels(s_labels_path)
 
 # Load interpreters
-def make_interpreter(path: Path):
+def make_interpreter(path: Path): 
     if not path.exists():
         raise FileNotFoundError(f"Model file not found: {path}")
     interp = Interpreter(model_path=str(path))
