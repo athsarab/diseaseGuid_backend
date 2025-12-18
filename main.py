@@ -30,7 +30,7 @@ def load_labels(path: Path):
     if not path.exists():
         raise FileNotFoundError(f"Label file not found: {path}")
     with open(path, "r") as f:
-        return [l.strip() for l in f if l.strip()]
+        return [l.strip() for l in f if l.strip()] 
 
 # Paths (make absolute so working dir won't break)
 d_labels_path = BASE_DIR / "disease_labels.txt"
