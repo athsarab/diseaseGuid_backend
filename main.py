@@ -11,7 +11,7 @@ import logging
 # Try to import TensorFlow; fallback to tflite_runtime if TF not available
 try:
     import tensorflow as tf 
-    Interpreter = tf.lite.Interpreter
+    Interpreter = tf.lite.Interpreter 
     logging.info("Using tensorflow for TFLite Interpreter") 
 except Exception: 
     try:
