@@ -21,7 +21,7 @@ except Exception:
         logging.exception("No tflite interpreter available. Install tensorflow or tflite-runtime.")
         raise
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent 
 
 IMG_SIZE = (224, 224)   # fallback default
 CONF_THRESHOLD = 0.6
