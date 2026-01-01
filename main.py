@@ -22,7 +22,7 @@ except Exception:
         raise
 
 BASE_DIR = Path(__file__).resolve().parent 
-
+ 
 IMG_SIZE = (224, 224)   # fallback default
 CONF_THRESHOLD = 0.6
 
