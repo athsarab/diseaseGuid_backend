@@ -13,7 +13,7 @@ try:
     import tensorflow as tf 
     Interpreter = tf.lite.Interpreter 
     logging.info("Using tensorflow for TFLite Interpreter") 
-except Exception:  
+except Exception:   
     try:
         from tflite_runtime.interpreter import Interpreter
         logging.info("Using tflite_runtime Interpreter")
