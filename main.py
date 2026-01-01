@@ -16,7 +16,7 @@ try:
 except Exception:   
     try:
         from tflite_runtime.interpreter import Interpreter
-        logging.info("Using tflite_runtime Interpreter")
+        logging.info("Using tflite_runtime Interpreter") 
     except Exception as e:
         logging.exception("No tflite interpreter available. Install tensorflow or tflite-runtime.")
         raise
